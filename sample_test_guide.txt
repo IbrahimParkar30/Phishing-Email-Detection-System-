@@ -1,0 +1,154 @@
+==============================================================================
+  PHISHING EMAIL SCREENSHOT DETECTOR — SAMPLE TEST GUIDE
+==============================================================================
+
+This guide shows you how to create test images to verify the app is working
+correctly. You don't need to have real phishing emails.
+
+------------------------------------------------------------------------------
+METHOD 1: TYPE A FAKE EMAIL AND SCREENSHOT IT
+------------------------------------------------------------------------------
+
+Step 1: Open Notepad (Windows) or TextEdit (macOS).
+Step 2: Type one of the test email samples below.
+Step 3: Take a screenshot of the Notepad window.
+        Windows: Press  Win + Shift + S  → select the area → save as PNG.
+        macOS:   Press  Cmd + Shift + 4  → drag to select → saved to Desktop.
+Step 4: Upload the screenshot to the app and click "Analyze Email".
+
+------------------------------------------------------------------------------
+TEST SAMPLE 1 — EXPECTED RESULT: 🚨 PHISHING
+------------------------------------------------------------------------------
+Paste the following into Notepad, screenshot it, and upload:
+
+From: support@paypall-secure.com
+To: you@example.com
+Subject: URGENT: Your PayPal Account Has Been Suspended
+
+Dear Customer,
+
+URGENT: We have detected suspicious activity on your PayPal account.
+Your account has been suspended due to unauthorized access.
+
+You must verify your account immediately or your account will be terminated.
+
+Click here to verify your account:
+http://192.168.1.55/paypal-login/verify?id=abc123
+
+Failure to respond within 24 hours will result in permanent account closure.
+
+Download the attached file to complete verification: verify_account.exe
+
+ACTION REQUIRED. Do not ignore this email.
+
+PayPal Security Team
+------------------------------------------------------------------------------
+
+What the detector should find:
+  ✓ Phishing Keywords: "verify your account", "dear customer",
+                       "account has been suspended", "click here",
+                       "account will be terminated"
+  ✓ Suspicious URL: IP address-based URL (192.168.x.x)
+  ✓ IP Address in URL: detected
+  ✓ Urgency Language: "respond immediately", "failure to respond",
+                      "your account has been suspended"
+  ✓ Suspicious Attachment: .exe extension
+  ✓ Sender-Domain Mismatch: claims to be PayPal, sent from paypall-secure.com
+  ✓ ALL-CAPS: URGENT, ACTION REQUIRED
+
+Expected score: ~35+ / 51
+Expected classification: 🚨 PHISHING
+
+------------------------------------------------------------------------------
+TEST SAMPLE 2 — EXPECTED RESULT: ⚠️ SUSPICIOUS
+------------------------------------------------------------------------------
+
+From: newsletter@shop-deals.com
+To: you@example.com
+Subject: Limited Time Offer — Expires Today!
+
+Hi there,
+
+We have a special offer just for you! This limited time offer expires today.
+
+Click here to claim your reward: http://bit.ly/3xSample
+
+Best regards,
+The Marketing Team
+------------------------------------------------------------------------------
+
+What the detector should find:
+  ✓ Phishing Keywords: "limited time offer", "click here", "claim your reward"
+  ✓ Free-Hosting Domain: bit.ly
+  ✓ Urgency Language: "expires today"
+
+Expected score: ~8–12 / 51
+Expected classification: ⚠️ SUSPICIOUS
+
+------------------------------------------------------------------------------
+TEST SAMPLE 3 — EXPECTED RESULT: ✅ LEGITIMATE
+------------------------------------------------------------------------------
+
+From: news@medium.com
+To: you@example.com
+Subject: Your weekly digest is ready
+
+Hi,
+
+Your weekly reading list is ready. Here are the top stories curated for you
+this week based on your interests.
+
+Have a great weekend!
+
+The Medium Team
+------------------------------------------------------------------------------
+
+What the detector should find:
+  (nothing suspicious)
+
+Expected score: 0–2 / 51
+Expected classification: ✅ LEGITIMATE
+
+------------------------------------------------------------------------------
+METHOD 2: USE A REAL PHISHING EXAMPLE (SAFELY)
+------------------------------------------------------------------------------
+
+If you have received a suspected phishing email in your inbox:
+
+1. DO NOT click any links inside the email.
+2. Open the email in your email client (Gmail, Outlook, etc.).
+3. Take a screenshot of just the email body and header area.
+4. Upload the screenshot to this app.
+
+WARNING: Never forward phishing emails or open attachments.
+         Only screenshot and analyse the visible text.
+
+------------------------------------------------------------------------------
+METHOD 3: PHISHING EMAIL DATABASES FOR TESTING
+------------------------------------------------------------------------------
+
+There are publicly available phishing email datasets for research and testing:
+
+1. PhishTank (https://www.phishtank.com) — Verified phishing URL database.
+   You can create a fake email screenshot mentioning one of their listed URLs.
+
+2. The Enron Email Dataset — Public domain email corpus.
+   Available at: https://www.cs.cmu.edu/~./enron/
+
+3. APWG eCrime Reports — https://apwg.org/resources/apwg-reports/
+   Contains analysis of real phishing campaigns.
+
+Note: Always handle phishing samples in a safe, isolated environment.
+
+------------------------------------------------------------------------------
+TIPS FOR BEST OCR RESULTS
+------------------------------------------------------------------------------
+
+• Use PNG format — higher quality than JPG for text.
+• Take screenshots at 100% zoom — don't shrink the window.
+• Avoid dark mode emails — light background + dark text gives best OCR accuracy.
+• Crop tightly around the email text — removes UI chrome and improves focus.
+• If OCR produces garbled text, try increasing your display resolution or
+  system DPI settings before taking the screenshot.
+
+==============================================================================

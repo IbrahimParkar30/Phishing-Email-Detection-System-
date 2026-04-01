@@ -1,0 +1,199 @@
+# =============================================================================
+# phishing_keywords.txt
+# Phishing Email Screenshot Detector — Keyword List
+#
+# Format: One keyword or phrase per line (case-insensitive matching).
+# Lines starting with # are treated as comments and are ignored.
+# Add your own keywords at the bottom.
+# =============================================================================
+
+# ── Account & Identity Theft ─────────────────────────────────────────────────
+verify your account
+verify your identity
+confirm your account
+confirm your information
+confirm your email address
+update your account
+update your information
+update your payment details
+update your billing information
+your account has been suspended
+your account has been compromised
+your account has been locked
+account verification required
+account security alert
+unusual activity detected on your account
+suspicious login detected
+unauthorized access to your account
+your account will be closed
+your account will be terminated
+reactivate your account
+complete your account verification
+
+# ── Password & Credentials ────────────────────────────────────────────────────
+reset your password
+your password has expired
+your password has been compromised
+change your password immediately
+enter your password
+provide your credentials
+enter your login details
+login credentials required
+
+# ── Financial & Payment ───────────────────────────────────────────────────────
+credit card information
+credit card number
+debit card number
+bank account number
+bank account details
+routing number
+social security number
+provide your ssn
+wire transfer
+western union
+money gram
+gift card
+itunes gift card
+google play gift card
+amazon gift card
+send payment
+payment required
+billing information required
+invoice attached
+outstanding invoice
+overdue payment
+payment failed
+your payment has been declined
+complete your payment
+update your payment method
+
+# ── Prizes & Rewards ─────────────────────────────────────────────────────────
+you have won
+you are a winner
+congratulations you won
+claim your prize
+claim your reward
+claim your winnings
+lottery winner
+selected as a winner
+inheritance funds
+unclaimed funds
+million dollars
+free gift
+exclusive reward
+special offer
+you have been selected
+
+# ── Action & Urgency ─────────────────────────────────────────────────────────
+click here
+click this link
+click the link below
+click below to verify
+click here to verify
+click here to confirm
+click here to update
+click here to reset
+click here to activate
+follow this link
+visit this link
+open the attachment
+download the file
+open attached file
+download attached document
+act now
+act immediately
+respond immediately
+respond urgently
+action required
+action needed
+immediate action required
+do not ignore
+do not delete this email
+last warning
+final notice
+final reminder
+time sensitive
+limited time
+expires today
+expires in 24 hours
+expires soon
+this offer expires
+
+# ── Impersonation Triggers ────────────────────────────────────────────────────
+dear customer
+dear valued customer
+dear account holder
+dear user
+dear member
+dear client
+your apple id
+your google account
+your microsoft account
+your paypal account
+your amazon account
+your netflix account
+your bank of america account
+your chase account
+helpdesk notification
+it support team
+system administrator
+hr department
+human resources
+
+# ── Threatening / Fear Language ───────────────────────────────────────────────
+your account will be deleted
+your service will be interrupted
+your access will be blocked
+we detected suspicious activity
+we noticed unusual activity
+we have placed a hold on your account
+failure to respond
+failure to verify
+legal action will be taken
+you may face legal action
+your account has been flagged
+your ip address has been flagged
+you have been reported
+
+# ── Document / Attachment Lures ───────────────────────────────────────────────
+shared document
+shared file
+shared with you
+document requires your signature
+sign the document
+review the attached document
+invoice number
+purchase order attached
+shipping notification
+package delivery failed
+delivery attempt failed
+track your package
+fedex notification
+ups notification
+dhl notification
+usps notification
+
+# ── Tax / Government Lures ───────────────────────────────────────────────────
+irs notice
+tax refund
+tax return
+tax alert
+government notice
+stimulus payment
+social security administration
+department of homeland security
+fbi notice
+
+# ── Crypto / Scam Lures ───────────────────────────────────────────────────────
+bitcoin payment
+cryptocurrency payment
+send bitcoin
+crypto wallet
+wallet address
+investment opportunity
+high return investment
+guaranteed profit
+double your money
+make money fast
+work from home opportunity
+make $5000 a week

@@ -1,0 +1,8 @@
+# Navigate to your project folder first
+cd C:\path\to\phishing_screenshot_app
+
+# Activate the virtual environment
+venv\Scripts\activate
+
+# Then run the app
+streamlit run app.py
